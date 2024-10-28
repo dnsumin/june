@@ -50,8 +50,10 @@ header {
     overflow: hidden;
     width: 70%;
     margin: 0 auto;
+    margin-top: 200px;
     width: calc(100% - 10vw);
     max-width: 1200px;
+    transform: scale(1.5);
 }
 
 .image-wrapper {
