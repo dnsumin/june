@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Pretendard-Regular', sans-serif; /* 폰트 적용 */
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* 뷰포트 높이의 15%로 설정 (기존보다 크게) */
+    width: 100%; /* 뷰포트 너비 전체 */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%; /* 전체 너비의 90%로 설정 */
+    padding: 10px 0; /* 상하 여백 추가 */
+}
+
+.text1, .text2 {
+    margin: 0 37vw;
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-size: 1vw; /* 뷰포트 너비 기준 텍스트 크기 */
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    width: 6vw; /* 로고 너비를 뷰포트 너비의 4%로 설정 (기존보다 작게) */
+    height: auto; /* 높이를 비율에 맞게 조정 */
+}
+
+.film-title {
+    text-align: left;
+    white-space: nowrap; /* 줄바꿈 방지 */
+    margin: 20px 0px;
+    color: white;
+    margin-left: 6vw;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
+    width: calc(100% - 10vw);
+    max-width: 1200px;
+}
+
+.image-wrapper {
+    width: 80%;
+    overflow: hidden;
+}
+
+.image-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-track img {
+    max-width: 100%;
+    height: auto;
+    flex: 0 0 100%; /* 이미지 하나가 전체 너비를 차지하도록 설정 */
+}
+
+.nav-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .image-wrapper {
+        width: 100%;
+    }
+
+    .nav-btn {
+        font-size: 18px;
+    }
+}
