@@ -26,10 +26,11 @@ header {
     font-size: 1vw; /* 뷰포트 너비 기준 텍스트 크기 */
     text-align: center;
     color: white;
+    text-decoration: none; /* 밑줄 제거 */
 }
 
 .logo {
-    width: 6vw; /* 로고 너비를 뷰포트 너비의 4%로 설정 (기존보다 작게) */
+    width: 4.5vw; /* 로고 너비를 뷰포트 너비의 4%로 설정 (기존보다 작게) */
     height: auto; /* 높이를 비율에 맞게 조정 */
 }
 
